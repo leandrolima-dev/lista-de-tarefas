@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+// ** O código do projeto abaixo foi refatorado e renomeado para script.js. **
+>>>>>>> c00710d (feat: add features with `javascript`)
 
 const form = document.querySelector("#todo-form");
 const taskTitleInput = document.querySelector("#task-title-input");
