@@ -30,11 +30,9 @@ function createTaskItem(taskTitle, done = false) {
     const taskItem = event.target.parentElement;
     const taskTitleSpan = taskItem.querySelector("span");
 
-    if (checkbox.checked) {
-      taskTitleSpan.style.textDecoration = "line-through";
-    } else {
-      taskTitleSpan.style.textDecoration = "none";
-    }
+    taskTitleSpan.style.textDecoration = checkbox.checked
+      ? "line-through"
+      : "none";
 
     updateTaskStatus(taskTitleSpan.textContent, checkbox.checked);
   });
@@ -71,17 +69,14 @@ function createTaskTitleSpan(taskTitle) {
 
 function createRemoveButton() {
   const removeButton = document.createElement("button");
-  removeButton.textContent = "Remove";
+  removeButton.textContent = "Remover";
   return removeButton;
 }
 
 function updateTaskStatus(taskTitle, isDone) {
-  tasks = tasks.map((task) => {
-    if (task.title === taskTitle) {
-      task.done = isDone;
-    }
-    return task;
-  });
+  tasks = tasks.map((task) =>
+    task.title === taskTitle ? { ...task, done: isDone } : task
+  );
   saveTasksToLocalStorage();
 }
 
