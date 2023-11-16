@@ -40,6 +40,8 @@ function createTaskItem(taskTitle, done = false) {
   });
   checkbox.checked = done;
 
+  if (done) taskTitleSpan.style.textDecoration = "line-through";
+
   removeButton.addEventListener("click", (event) => {
     const taskItem = event.target.parentElement;
     const taskTitle = taskItem.querySelector("span").textContent;
