@@ -22,6 +22,7 @@ function renderTasksOnHTML(taskTitle, done = false) {
 
 function createTaskItem(taskTitle, done = false) {
   const taskItem = document.createElement("li");
+  taskItem.classList.add("list-group-item", "list-group-item-action");
   const checkbox = createCheckbox();
   const taskTitleSpan = createTaskTitleSpan(taskTitle);
   const removeButton = createRemoveButton();
@@ -69,6 +70,7 @@ function createTaskTitleSpan(taskTitle) {
 
 function createRemoveButton() {
   const removeButton = document.createElement("button");
+  removeButton.classList.add("btn", "btn-danger", "btn-sm");
   removeButton.textContent = "Remover";
   return removeButton;
 }
