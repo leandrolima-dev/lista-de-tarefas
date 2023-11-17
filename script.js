@@ -22,7 +22,7 @@ function renderTasksOnHTML(taskTitle, done = false) {
 
 function createTaskItem(taskTitle, done = false) {
   const taskItem = document.createElement("li");
-  taskItem.classList.add("list-group-item", "list-group-item-action");
+  taskItem.classList.add("list-group-item", "bg-transparent", "text-white-50", "d-flex", "align-items-center", "justify-content-between");
   const checkbox = createCheckbox();
   const taskTitleSpan = createTaskTitleSpan(taskTitle);
   const removeButton = createRemoveButton();
@@ -64,6 +64,7 @@ function createCheckbox() {
 
 function createTaskTitleSpan(taskTitle) {
   const taskTitleSpan = document.createElement("span");
+  taskTitleSpan.classList.add("text-align-start", "w-75", "ml-3");
   taskTitleSpan.textContent = taskTitle;
   return taskTitleSpan;
 }
