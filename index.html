@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   </head>
-  <body>
+  <body class="container col-xxl-4 col-xl-6 col-lg-6 col-md-8 col-sm-12 ">
     <header>
-      <h1>Lista de Tarefas</h1>
+      <h1 class="m-4 text-center">Lista de Tarefas</h1>
     </header>
     <main>
-      <section>
-        <form id="todo-form">
+      <section >
+        <form id="todo-form" class="input-group mb-3">
           <input
+          class="form-control"
             type="text"
             placeholder="Adicione uma tarefa..."
+            aria-label="Adicione uma tarefa..."
+            aria-describedby="add-task-button"
             id="task-title-input"
           />
-          <button type="submit" id="add-task-button">Adicionar</button>
+          <button class="btn btn-outline-secondary" type="submit" id="add-task-button">Adicionar</button>
         </form>
       </section>
 
       <section>
-        <ul id="task-list">
+        <ul id="task-list" class="list-group list-group-flush d-flex flex-column gap-3 list-unstyled">
           <!-- <li>
             <input placeholder="Marcar como concluída" type="checkbox" />
             <span>Estudar JavaScript</span>
@@ -32,6 +36,7 @@
       </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script contentType="text/javascript" src="script.js"></script>
   </body>
 </html>
