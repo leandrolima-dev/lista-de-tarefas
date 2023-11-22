@@ -58,13 +58,14 @@ function createTaskItem(taskTitle, done = false) {
 
 function createCheckbox() {
   const checkbox = document.createElement("input");
+checkbox.classList.add("form-check-input", "m-0", "bg-secondary", "focus-ring", "focus-ring-secondary", "border-0",);
   checkbox.type = "checkbox";
   return checkbox;
 }
 
 function createTaskTitleSpan(taskTitle) {
   const taskTitleSpan = document.createElement("span");
-  taskTitleSpan.classList.add("text-align-start", "w-75", "ml-3");
+  taskTitleSpan.classList.add("text-start", "text-truncate", "w-75", "ms-2");
   taskTitleSpan.textContent = taskTitle;
   return taskTitleSpan;
 }
