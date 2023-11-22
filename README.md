@@ -8,7 +8,8 @@ Este é um simples aplicativo web de lista de tarefas, onde você pode adicionar
 ## Tecnologias utilizadas
 
 - ![HTML](https://img.shields.io/badge/HTML-5-orange)
-- ![CSS](https://img.shields.io/badge/CSS-3-blue) (em desenvolvimento)
+- ![CSS](https://img.shields.io/badge/CSS-3-blue)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
 ## Funcionalidades
