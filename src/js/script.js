@@ -22,7 +22,14 @@ function renderTasksOnHTML(taskTitle, done = false) {
 
 function createTaskItem(taskTitle, done = false) {
   const taskItem = document.createElement("li");
-  taskItem.classList.add("list-group-item", "bg-transparent", "text-white-50", "d-flex", "align-items-center", "justify-content-between");
+  taskItem.classList.add(
+    "list-group-item",
+    "bg-transparent",
+    "text-white-50",
+    "d-flex",
+    "align-items-center",
+    "justify-content-between"
+  );
   const checkbox = createCheckbox();
   const taskTitleSpan = createTaskTitleSpan(taskTitle);
   const removeButton = createRemoveButton();
@@ -58,7 +65,14 @@ function createTaskItem(taskTitle, done = false) {
 
 function createCheckbox() {
   const checkbox = document.createElement("input");
-checkbox.classList.add("form-check-input", "m-0", "bg-secondary", "focus-ring", "focus-ring-secondary", "border-0",);
+  checkbox.classList.add(
+    "form-check-input",
+    "m-0",
+    "bg-secondary",
+    "focus-ring",
+    "focus-ring-secondary",
+    "border-0"
+  );
   checkbox.type = "checkbox";
   return checkbox;
 }
