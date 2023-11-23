@@ -2,6 +2,8 @@ const form = document.querySelector("#todo-form");
 const taskTitleInput = document.querySelector("#task-title-input");
 const taskList = document.querySelector("#task-list");
 const localStorageKey = "tasks";
+const alert = document.querySelector("#alert");
+
 let tasks = [];
 
 window.onload = () => {
@@ -113,9 +115,13 @@ form.addEventListener("submit", (event) => {
   const taskTitle = taskTitleInput.value;
 
   if (taskTitle.length < 3) {
-    alert("O título da tarefa deve ter no mínimo 3 caracteres!");
-    return;
-  }
+    // alert("O título da tarefa deve ter no mínimo 3 caracteres!");
+    alert.classList.remove("d-none");
+    setTimeout(() => {
+      alert.classList.add("d-none");
+    } , 3000);
+    return
+  } 
 
   tasks.push({
     title: taskTitle,

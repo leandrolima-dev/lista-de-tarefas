@@ -13,9 +13,19 @@
   <body
     class="container col-xxl-4 col-xl-6 col-lg-6 col-md-8 col-sm-12 bg-dark"
   >
+    <div
+      id="alert"
+      class="alert alert-warning fade-show mt-3 d-none"
+      role="alert"
+    >
+      <strong>Atenção!</strong> O título da tarefa deve ter no mínimo 3
+      caracteres.
+    </div>
+
     <header>
       <h1 class="mx-auto mt-5 text-center text-white-50">Lista de Tarefas</h1>
     </header>
+
     <main class="shadow p-3 mb-5 bg-body-sucess rounded">
       <section>
         <form id="todo-form" class="input-group mb-3">
