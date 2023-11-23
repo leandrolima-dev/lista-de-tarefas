@@ -19,10 +19,11 @@ Este é um simples aplicativo web de lista de tarefas, onde você pode adicionar
 - 🗑️ Remover tarefas: Clique no botão "Remover" ao lado de uma tarefa para removê-la da lista.
 
 ## Capturas de tela 
-#### (em desenvolvimento)
+- Prints do projeto em versões desktop e mobile, após deploy na Vercel
 
-![Tela inicial](screenshot1.png)
-![Tela com tarefas adicionadas](screenshot2.png)
+![Tela - versão desktop](src/images/tela-versao-desktop.png)
+
+![Tela - versão mobile](src/images/tela-versao-mobile.png)
 
 ## Como usar
 
@@ -30,10 +31,10 @@ Este é um simples aplicativo web de lista de tarefas, onde você pode adicionar
 2. Abra o arquivo `index.html` em um navegador da web.
 3. Use o formulário para adicionar tarefas, marcar como concluído ou remover tarefas.
 
-## Deploy 
-#### (em desenvolvimento)
+## Deploy 💻
 
-Você pode conferir o projeto em ação [aqui](https://seu-link-deploy).
+
+Você também pode conferir o projeto em ação clicando aqui: [site](https://lista-tarefas-one.vercel.app/)
 
 ## Dependências
 
